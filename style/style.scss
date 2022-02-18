@@ -1,0 +1,206 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Karla';
+    background: #E5E5E5;
+}
+
+.header {
+    .container {
+        max-width: 320px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-height: 80px;
+    }
+    &__cart-block {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+    }
+    &__logo {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin: 28px 28px 28px 20px;
+    }
+    &__logo-img {
+
+    }
+    &__navigation {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__navigation-block {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__navigation-item {
+        margin: 10px 15px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 2px;
+    }
+    &__cart-block {
+        display: flex;
+        align-items: center;
+    }
+    &__cart-icon {
+        margin-right: 10px;
+        width: 16px;
+        height: 20px;
+    }
+    &__cart-text {
+        margin-right: 10px;
+    }
+    &__cart-count {
+        width: 20px;
+        height: 18px;
+        background: #000;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        span {
+            font-size: 11px;
+            line-height: 18px;
+            text-align: center;
+        }
+    }
+
+}
+
+.banner {
+    &__block {
+        padding: 50px 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__top-text {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        color: #fff;
+        margin-bottom: 29px;
+    }
+    &__main-text {
+        text-align: center;
+        font-size: 47px;
+        line-height: 60px;
+        color: #fff;
+    }
+    &__sub-text {
+        text-align: center;
+        color: #fff;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    &__button {
+        border: none;
+        background: #fff;
+        padding: 8px 24px;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #1D1F2E;
+
+        &:hover {
+            background: rgb(196, 196, 196);
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    .header {
+        &__logo {
+            width: 40%;
+            margin: 0;
+            padding: 0 15px;
+        }
+        &__cart-block {
+            width: 40%;
+            margin: 0;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .header {
+        .container {
+            max-width: 365px;
+            margin: 0 auto;
+        }
+        &__logo {
+            margin: 0;
+        }
+    }
+    
+    
+}
+@media (min-width: 768px) {
+    .header {
+        .container {
+            max-width: 740px;
+            margin: 0 auto;
+        }
+        &__logo {
+            margin: 0;
+        }
+
+    }
+}
+@media (min-width: 1024px) {
+    .header {
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+        }
+        &__navigation-block {
+            display: flex;
+            justify-content: center;
+        }
+        &__cart-block {
+            order: 3;
+            width: auto;
+        }
+        &__logo {
+            width: auto;
+        }
+    }
+    .banner {
+        &__top-text {
+            padding-top: 159px;
+            margin-bottom: 10px;
+        }
+        &__main-text {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        &__sub-text {
+            padding-bottom: 38px;
+        }
+        &__button-block {
+            padding-bottom: 172px;
+        }
+    }
+}
